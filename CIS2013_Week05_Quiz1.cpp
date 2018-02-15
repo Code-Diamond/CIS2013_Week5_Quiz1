@@ -13,19 +13,19 @@ void setPrimeArray()
 	for (int i=2; i<100; i++) 
 	{
 		for (int j=2; j<i; j++)
-    	{
-	        if (i % j == 0) 
+		{
+			if (i % j == 0) 
 			{
-		        break;
+				break;
 			}
 			else if (i == j+1)
 			{
-		        //cout << i << " ";
+				//cout << i << " ";
 				counter++; 
 				primes[counter] = i;
 			}
 		}
-    }
+    	}
 
 }
 
@@ -53,19 +53,19 @@ void printAllPrimeNumbers(int firstNumber, int secondNumber)
 			cout << i << " ";
 		}
 		for (int j=firstNumber; j<i; j++)
-        {
-	        if (i % j == 0) 
+        	{
+			if (i % j == 0) 
 			{
-		        break;
+				break;
 			}
 			else if (i == j + 1)
 			{
-		        cout << i << " ";
+				cout << i << " ";
 				//counter++; 
 				//primes[counter] = i;
 			}
 		}
-    }
+    	}
 
 }
 
